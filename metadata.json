@@ -1,0 +1,72 @@
+{
+  "name": "puppetlabs-dropsonde",
+  "version": "0.1.0",
+  "author": "Ben Ford",
+  "summary": "Manages and configures the reporting of Puppet telemetry data.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/puppetlabs/puppetlabs-dropsonde",
+  "project_page": "https://github.com/puppetlabs/puppetlabs-dropsonde",
+  "issues_url": "https://github.com/puppetlabs/puppetlabs-dropsonde/issues",
+  "dependencies": [
+    { "name": "puppetlabs/stdlib",  "version_requirement": ">= 4.20.0 < 7.0.0"  }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "9"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "18.04"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora",
+      "operatingsystemrelease": [
+        "29"
+      ]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "15"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.10.0 < 7.0.0"
+    }
+  ],
+  "pdk-version": "1.15.0",
+  "template-url": "pdk-default#1.15.0",
+  "template-ref": "tags/1.15.0-0-g0bc522e"
+}
