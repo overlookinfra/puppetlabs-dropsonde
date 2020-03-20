@@ -1,6 +1,6 @@
 # dropsonde
 
-This module installs and managed the [Dropsonde Puppet telemetry client](https://github.com/puppetlabs/dropsonde).
+This module installs and manages the [Dropsonde Puppet telemetry client](https://github.com/puppetlabs/dropsonde).
 See the documentation on [its repository page](https://github.com/puppetlabs/dropsonde) for information about the project.
 
 #### Table of Contents
