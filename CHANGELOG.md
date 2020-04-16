@@ -2,10 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
-## Release 0.1.0
+## Release 0.0.2
 
-**Features**
+Update command line to actually submit a report.
 
-**Bugfixes**
+## Release 0.0.1
 
-**Known Issues**
+Initial release
