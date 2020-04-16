@@ -50,7 +50,7 @@ class dropsonde (
 
   cron { 'submit Puppet telemetry report':
     ensure  => $ensure_cron,
-    command => '/opt/puppetlabs/puppet/bin/dropsonde',
+    command => '/opt/puppetlabs/puppet/bin/dropsonde submit',
     user    => 'root',
     weekday => fqdn_rand(6),
     hour    => fqdn_rand(23),
