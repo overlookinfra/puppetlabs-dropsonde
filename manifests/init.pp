@@ -9,7 +9,8 @@
 #   include dropsonde
 class dropsonde (
   Boolean           $enabled   = true,
-  Optional[Array]   $blacklist = undef,
+  Optional[Array]   $enable    = undef,
+  Optional[Array]   $disable   = undef,
   Optional[String]  $cachepath = undef,
   Optional[Integer] $ttl       = undef,
   Optional[Boolean] $update    = undef,
@@ -17,7 +18,8 @@ class dropsonde (
 ) {
 
   $config = {
-    blacklist => $blacklist,
+    enable    => $enable,
+    disable   => $disable,
     cachepath => $cachepath,
     ttl       => $ttl,
     update    => $update,
