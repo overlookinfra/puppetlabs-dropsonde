@@ -13,8 +13,11 @@
 
 In general, you'll just want to include the class, but there are a few
 settings you might care about. If you want to remove any of the computed
-metrics from the report, list them as an array in `$blacklist` and if you
+metrics from the report, list them as an array in `$disable` and if you
 want to change the generated site ID, enter a random string as the `$seed`.
+
+* **See also**
+https://github.com/puppetlabs/dropsonde
 
 #### Examples
 
@@ -36,7 +39,15 @@ Data type: `Boolean`
 
 Default value: `true`
 
-##### `blacklist`
+##### `enable`
+
+Data type: `Optional[Array]`
+
+
+
+Default value: `undef`
+
+##### `disable`
 
 Data type: `Optional[Array]`
 
