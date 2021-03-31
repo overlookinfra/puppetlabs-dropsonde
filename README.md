@@ -44,16 +44,19 @@ If you prefer, you can configure several settings, such as:
 
 ``` puppet
 class { 'dropsonde':
-  blacklist => ['puppetfiles', 'modules'],
-  seed      => 'banana pancakes'
+  disable => ['puppetfiles', 'modules'],
+  seed    => 'banana pancakes'
 }
 ```
 
 The full list of options is:
 
-* `blacklist`
+* `disable`
     * An array of metrics that you don't want to report. See the available settings
       by running `/opt/puppetlabs/puppet/bin/dropsonde list`.
+* `enable`
+    * An array of metrics that you allow to report on. All other metrics will be skipped.
+      See the available settings by running `/opt/puppetlabs/puppet/bin/dropsonde list`.
 * `update`
     * Set to `false` to prevent the tool from automatically updating its list of
       names of public Forge modules. Only do this if you're behind a firewall that

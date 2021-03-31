@@ -1,5 +1,5 @@
 class { 'dropsonde':
-  blacklist => ['puppetfiles', 'modules'],
+  disable   => ['puppetfiles', 'modules'],
   update    => false,
   cachepath => '/var/cache',
   ttl       => 21,
