@@ -10,6 +10,30 @@
 #
 # @example
 #   include dropsonde
+# @param [Boolean] enabled
+#   Set the cron job for dropsonde weekly report submit
+# @param [Array] enable
+#   Only load these metrics. For example:
+#   ```puppet
+#     class { 'dropsonde':
+#       enable => ['dependencies', 'modules'],
+#     }
+#   ```
+# @param [Array] disable
+#   List of metrics to omit. For example:
+#   ```puppet
+#     class { 'dropsonde':
+#       disable => ['puppetfiles', 'environments'],
+#     }
+#   ```
+# @param [String] cachepath
+#   Path to cache directory
+# @param [Integer] ttl
+#   Forge module cache ttl in days
+# @param [Boolean] update
+#   Auto update the Forge module name cache if expired
+# @param [String] seed
+#   Any number or string used to generate the randomized site ID
 class dropsonde (
   Boolean           $enabled   = true,
   Optional[Array]   $enable    = undef,
