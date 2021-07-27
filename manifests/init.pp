@@ -62,7 +62,7 @@ class dropsonde (
     ensure  => $ensure_config,
     owner   => 'root',
     mode    => '0660',
-    content => $config.to_yaml,
+    content => dropsonde::to_yaml($config),
   }
 
 
