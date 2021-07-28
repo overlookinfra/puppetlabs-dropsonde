@@ -8,6 +8,10 @@
 
 * [`dropsonde`](#dropsonde): Manages the Dropsonde Puppet telementry client and cron job.
 
+### Functions
+
+* [`dropsonde::to_yaml`](#dropsondeto_yaml): }
+
 ## Classes
 
 ### <a name="dropsonde"></a>`dropsonde`
@@ -105,4 +109,30 @@ Data type: `Optional[String]`
 Any number or string used to generate the randomized site ID
 
 Default value: ``undef``
+
+## Functions
+
+### <a name="dropsondeto_yaml"></a>`dropsonde::to_yaml`
+
+Type: Ruby 4.x API
+
+}
+
+#### `dropsonde::to_yaml(Any $data, Optional[Hash] $options)`
+
+}
+
+Returns: `String`
+
+##### `data`
+
+Data type: `Any`
+
+
+
+##### `options`
+
+Data type: `Optional[Hash]`
+
+
 

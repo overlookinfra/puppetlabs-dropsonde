@@ -7,12 +7,7 @@
   "source": "https://github.com/puppetlabs/puppetlabs-dropsonde",
   "project_page": "https://github.com/puppetlabs/puppetlabs-dropsonde",
   "issues_url": "https://github.com/puppetlabs/puppetlabs-dropsonde/issues",
-  "dependencies": [
-    {
-      "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.20.0 < 7.0.0"
-    }
-  ],
+  "dependencies": [],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
