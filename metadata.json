@@ -1,13 +1,15 @@
 {
   "name": "puppetlabs-dropsonde",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "puppetlabs",
   "summary": "Manages and configures the reporting of Puppet telemetry data.",
   "license": "Apache-2.0",
   "source": "https://github.com/puppetlabs/puppetlabs-dropsonde",
   "project_page": "https://github.com/puppetlabs/puppetlabs-dropsonde",
   "issues_url": "https://github.com/puppetlabs/puppetlabs-dropsonde/issues",
-  "dependencies": [],
+  "dependencies": [
+
+  ],
   "operatingsystem_support": [
     {
       "operatingsystem": "CentOS",
