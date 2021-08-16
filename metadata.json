@@ -1,6 +1,6 @@
 {
   "name": "puppetlabs-dropsonde",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "author": "puppetlabs",
   "summary": "Manages and configures the reporting of Puppet telemetry data.",
   "license": "Apache-2.0",
