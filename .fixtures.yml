@@ -9,5 +9,7 @@ fixtures:
     puppet_agent: 'https://github.com/puppetlabs/puppetlabs-puppet_agent.git'
     provision: 'https://github.com/puppetlabs/provision.git'
     facts: 'https://github.com/puppetlabs/puppetlabs-facts.git'
+  forge_modules:
+    hocon: "puppetlabs/hocon"
   symlinks:
     dropsonde: "#{source_dir}"

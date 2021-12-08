@@ -8,7 +8,10 @@
   "project_page": "https://github.com/puppetlabs/puppetlabs-dropsonde",
   "issues_url": "https://github.com/puppetlabs/puppetlabs-dropsonde/issues",
   "dependencies": [
-
+    {
+       "name": "puppetlabs/hocon",
+       "version_requirement": ">= 1.1.0 < 2.0.0"
+     }
   ],
   "operatingsystem_support": [
     {
