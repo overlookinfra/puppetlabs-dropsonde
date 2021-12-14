@@ -42,14 +42,14 @@ describe 'dropsonde complete configuration' do
     expect(run_shell('/opt/puppetlabs/puppet/bin/gem list | grep dropsonde').exit_code).to eq(0)
   end
 
-  it 'has configigured properly for complete configuration' do
+  it 'has configured properly for complete configuration' do
     run_shell('cat /etc/puppetlabs/telemetry.yaml') do |result|
-      telemetry_config = YAML.safe_load(result.stdout)
+      telemetry_config = YAML.safe_load(result.stdout, [Symbol])
       expect(result.exit_code).to eq(0)
-      expect(telemetry_config['disable']).to eq(['puppetfiles', 'modules'])
-      expect(telemetry_config['update']).to be false
-      expect(telemetry_config['cachepath']).to eq('/var/cache')
-      expect(telemetry_config['ttl']).to eq(21)
+      expect(telemetry_config[:disable]).to eq(['puppetfiles', 'modules'])
+      expect(telemetry_config[:update]).to be false
+      expect(telemetry_config[:cachepath]).to eq('/var/cache')
+      expect(telemetry_config[:ttl]).to eq(21)
     end
   end
 
