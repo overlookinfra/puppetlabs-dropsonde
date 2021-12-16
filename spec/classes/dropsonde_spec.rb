@@ -24,28 +24,26 @@ describe 'dropsonde' do
       it { is_expected.to contain_cron('submit Puppet telemetry report').with_ensure('present') }
     end
 
-
     context "on #{os} with vendored client and enabled => false" do
-      let(:facts) {
+      let(:facts) do
         os_facts.merge({
-          :dropsonde => {:bundled => true, :version => '0.0.6'},
-        })
-      }
+                         dropsonde: { bundled: true, version: '0.0.6' },
+                       })
+      end
       let(:params) { { enabled: false } }
 
       it { is_expected.to contain_hocon_setting('submit Puppet telemetry report').with_value(false) }
     end
 
     context "on #{os} with vendored client and enabled => true" do
-      let(:facts) {
+      let(:facts) do
         os_facts.merge({
-          :dropsonde => {:bundled => true, :version => '0.0.6'},
-        })
-      }
+                         dropsonde: { bundled: true, version: '0.0.6' },
+                       })
+      end
       let(:params) { { enabled: true } }
 
       it { is_expected.to contain_hocon_setting('submit Puppet telemetry report').with_value(true) }
     end
-
   end
 end

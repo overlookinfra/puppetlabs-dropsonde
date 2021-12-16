@@ -3,26 +3,7 @@
 require 'spec_helper_acceptance'
 
 describe 'dropsonde base configuration' do
-  context 'with use_cron => false' do
-    let(:dropsonde_manifest) do
-      <<-MANIFEST
-        class { 'dropsonde':
-          use_cron => false,
-        }
-      MANIFEST
-    end
-
-    after(:all) do
-      # remove the dropsonde gem
-      run_shell('yes | /opt/puppetlabs/puppet/bin/gem uninstall dropsonde')
-    end
-
-    it 'runs successfully' do
-      idempotent_apply(dropsonde_manifest)
-    end
-  end
-
-  context 'with enabled => true and use_cron => true' do
+  context 'with enabled => true' do
     let(:dropsonde_manifest) { 'include dropsonde' }
 
     before(:all) do
@@ -58,7 +39,7 @@ describe 'dropsonde base configuration' do
     end
   end
 
-  context 'with enabled => false and use_cron => true' do
+  context 'with enabled => false' do
     let(:dropsonde_manifest) do
       <<-MANIFEST
         class { 'dropsonde':
