@@ -28,7 +28,7 @@ Puppet::Functions.create_function(:'dropsonde::to_symbolized_yaml') do
   end
 
   def to_yaml(data, options = {})
-    config = data.map { |k,v| [k.to_sym, v] }.to_h
+    config = data.map { |k, v| [k.to_sym, v] }.to_h
     config.to_yaml(options)
   end
 end
