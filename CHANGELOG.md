@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v0.2.0](https://github.com/puppetlabs/puppetlabs-dropsonde/tree/v0.2.0) (2021-12-16)
+
+[Full Changelog](https://github.com/puppetlabs/puppetlabs-dropsonde/compare/v0.1.0...v0.2.0)
+
+### Added
+
+- Allow module to work with bundled gem [\#20](https://github.com/puppetlabs/puppetlabs-dropsonde/pull/20) ([binford2k](https://github.com/binford2k))
+- Symbolize the config file keys [\#19](https://github.com/puppetlabs/puppetlabs-dropsonde/pull/19) ([binford2k](https://github.com/binford2k))
+
 ## [v0.1.0](https://github.com/puppetlabs/puppetlabs-dropsonde/tree/v0.1.0) (2021-08-16)
 
 [Full Changelog](https://github.com/puppetlabs/puppetlabs-dropsonde/compare/v0.0.5...v0.1.0)
