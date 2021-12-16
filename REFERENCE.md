@@ -10,7 +10,7 @@
 
 ### Functions
 
-* [`dropsonde::to_yaml`](#dropsondeto_yaml): }
+* [`dropsonde::to_symbolized_yaml`](#dropsondeto_symbolized_yaml): }
 
 ## Classes
 
@@ -37,7 +37,6 @@ include dropsonde
 The following parameters are available in the `dropsonde` class:
 
 * [`enabled`](#enabled)
-* [`use_cron`](#use_cron)
 * [`enable`](#enable)
 * [`disable`](#disable)
 * [`cachepath`](#cachepath)
@@ -50,14 +49,6 @@ The following parameters are available in the `dropsonde` class:
 Data type: `Boolean`
 
 Set the cron job for dropsonde weekly report submit
-
-Default value: ``true``
-
-##### <a name="use_cron"></a>`use_cron`
-
-Data type: `Boolean`
-
-Enable dropsonde to use the cron provider from the host
 
 Default value: ``true``
 
@@ -121,13 +112,13 @@ Default value: ``undef``
 
 ## Functions
 
-### <a name="dropsondeto_yaml"></a>`dropsonde::to_yaml`
+### <a name="dropsondeto_symbolized_yaml"></a>`dropsonde::to_symbolized_yaml`
 
 Type: Ruby 4.x API
 
 }
 
-#### `dropsonde::to_yaml(Any $data, Optional[Hash] $options)`
+#### `dropsonde::to_symbolized_yaml(Any $data, Optional[Hash] $options)`
 
 }
 
